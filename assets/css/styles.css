@@ -15,14 +15,14 @@ html, body {
     min-height: 5rem;
 }
 
-#hero-container {
+#hero-container,#hero-container {
     height: 600px;
 }
 .image-imp{
     width: 60px;
     margin-right: 20px;
 }
-#hero-background {
+#hero-background,#hero-background2 {
     background-color: var(--dark);
     position: absolute;
     width: 0;
