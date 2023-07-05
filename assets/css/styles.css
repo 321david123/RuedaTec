@@ -19,8 +19,11 @@ html, body {
     height: 600px;
 }
 .image-imp{
-    width: 60px;
+    width: 55px;
     margin-right: 20px;
+}
+.nsed{
+    padding-right: 22px;
 }
 #hero-background,#hero-background2 {
     background-color: var(--dark);
