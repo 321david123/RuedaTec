@@ -446,112 +446,6 @@ img {
   font-weight: 300;
 }
 
-.hero-stack {
-  color: #f0f0f0;
-  background-color: #0e0e0e;
-  border-bottom: 1px solid #e4ebf3;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 80px 30px;
-  display: flex;
-  position: static;
-  top: 0;
-}
-
-.container-2 {
-  width: 100%;
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0%;
-  bottom: auto;
-  left: auto;
-  right: auto;
-}
-
-.hero-wrapper-two {
-  max-width: 750px;
-  text-align: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  position: -webkit-sticky;
-  position: sticky;
-}
-
-.margin-bottom-24px {
-  color: #e8e9e9;
-  margin-bottom: 24px;
-}
-
-.button-primary {
-  color: #fff;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  background-color: #1a1b1f;
-  padding: 12px 25px;
-  font-size: 12px;
-  line-height: 20px;
-  transition: all .2s;
-}
-
-.button-primary:hover {
-  color: #fff;
-  background-color: #32343a;
-}
-
-.button-primary:active {
-  background-color: #43464d;
-}
-
-.hero-image {
-  width: 100%;
-  margin-top: 50px;
-}
-
-.hero-image.shadow-two {
-  margin-top: 50px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
-.heading-5 {
-  -webkit-text-fill-color: inherit;
-  background-color: #e8e9e9;
-  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
-  background-clip: border-box;
-}
-
-.text-block {
-  max-width: 1200px;
-  justify-content: center;
-  align-items: center;
-  font-size: 22px;
-  display: flex;
-}
-
-.heading-6 {
-  z-index: 3;
-  color: #fff;
-  -webkit-text-stroke-color: #0e0e0e;
-  background-color: #0e0e0e;
-  font-family: Merriweather, serif;
-  font-size: 150px;
-  line-height: 190px;
-  text-decoration: none;
-  position: relative;
-}
-
-.image-3 {
-  background-color: #000;
-}
-
 @media screen and (max-width: 991px) {
   .nav-link {
     color: #e8e9e9;
@@ -678,10 +572,6 @@ img {
     margin-left: 65px;
     margin-right: 55px;
   }
-
-  .container-2 {
-    max-width: 728px;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -741,10 +631,6 @@ img {
   .heading-2 {
     margin-left: 20px;
     margin-right: 24px;
-  }
-
-  .hero-stack {
-    padding: 60px 15px;
   }
 }
 
@@ -858,10 +744,6 @@ img {
   .cell-2 {
     flex-wrap: nowrap;
     padding-bottom: 0;
-  }
-
-  .container-2 {
-    max-width: none;
   }
 }
 
