@@ -32,6 +32,100 @@
     <link href="images/favicon.ico" rel="apple-touch-icon">
   </head>
 <body class="body">
+  <script type="module" src="">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
+import { ManageAccount } from './firebaseconect.js';
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+    apiKey: "AIzaSyB4Qct3k3f8QadJq-kE4XLxKqoDnRaTsTI",
+    authDomain: "ruedatec.firebaseapp.com",
+    projectId: "ruedatec",
+    storageBucket: "ruedatec.appspot.com",
+    messagingSenderId: "410901841322",
+    appId: "1:410901841322:web:021b08d711f742613357d3",
+    measurementId: "G-15N8NPZHFN"
+  };
+  document.getElementById("formulario-sesion").addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  const account = new ManageAccount();
+  account.authenticate(email, password);
+  
+});
+
+console.log('Formulario de Inicio de Sesión');
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const auth = getAuth();
+
+export class ManageAccount {
+  register(email, password) {
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((_) => {
+        window.location.href = "login.html";
+        // Mostrar alerta de registro exitoso
+        alert("Registro exitoso. Serás redirigido a la página de inicio de sesión.");
+      })
+      .catch((error) => {
+        console.error(error.message);
+            // Mostrar alerta de error de registro
+            alert("Error al registrar: " + error.message);
+      });
+  }
+
+  authenticate(email, password) {
+    signInWithEmailAndPassword(auth, email, password)
+      .then((_) => {
+        window.location.href = "index.html";
+        // Mostrar alerta de inicio de sesión exitoso
+        alert("Has iniciado sesión correctamente. Serás redirigido a la página principal.");
+      })
+      .catch((error) => {
+        console.error(error.message);
+                // Mostrar alerta de error de inicio de sesión
+                alert("Error al iniciar sesión: " + error.message);
+      });
+  }
+
+  signOut() {
+    signOut(auth)
+      .then((_) => {
+        window.location.href = "index.html";
+      })
+      .catch((error) => {
+        console.error(error.message);
+      });
+  }
+}
+  </script>
+    <!-- <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyB4Qct3k3f8QadJq-kE4XLxKqoDnRaTsTI",
+        authDomain: "ruedatec.firebaseapp.com",
+        projectId: "ruedatec",
+        storageBucket: "ruedatec.appspot.com",
+        messagingSenderId: "410901841322",
+        appId: "1:410901841322:web:021b08d711f742613357d3",
+        measurementId: "G-15N8NPZHFN"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script> -->
   <!-- the changes are : copy all the header and change it for the one that we have right now using, you have to change the links from 
     the logo thats all the way down in this code so in the footer theres is thi logo from instagram and you have to delete it. Then the images that change their resolution when a pixel screen change
   so you have to delete them and its basically all for now, keep this text for other people to underestand the standards -->
