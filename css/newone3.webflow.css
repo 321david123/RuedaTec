@@ -257,7 +257,6 @@ img {
   display: flex;
 }
 .vid{
-  position: absolute; /* Necesario para usar z-index */
   display: none;
   z-index: -1; /* Coloca el elemento detrás */
   width: 100%; /* Ajusta el tamaño según sea necesario */
@@ -269,14 +268,38 @@ img {
   border-radius: 20px ;
 }
 .vid2{
-  position: absolute; /* Necesario para usar z-index */
   z-index: -1; /* Coloca el elemento detrás */
   width: 100%; /* Ajusta el tamaño según sea necesario */
   height: 100%; /* Ajusta el tamaño según sea necesario */
   top: 10%; /* Ajusta la posición según sea necesario */
   left: 0; /* Ajusta la posición según sea necesario */
   opacity: .1;
-  border-radius: 20px;
+  border-radius: 10px;
+}
+.inside{
+  position: absolute;
+  top: 45%;
+  font-size: 50px;
+  font-family:Arial, Helvetica, sans-serif;
+  
+}
+.inside2{
+  position: absolute;
+  top: 50%;
+  font-size: 30px;
+  font-family:Arial, Helvetica, sans-serif;
+  
+}
+.inside3{
+  position: absolute;
+  top: 52.5%;
+  font-size: 12px;
+  font-family:Arial, Helvetica, sans-serif;
+  
+}
+.dens{
+  display: flex;
+  justify-content: center; 
 }
 .footer-link {
   width: auto;
@@ -470,7 +493,121 @@ img {
   font-size: 19px;
   font-weight: 300;
 }
-
+@media screen and (max-width: 1350px) {
+  .inside{
+    position: absolute;
+    top: 40%;
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+  }
+  .inside2{
+    position: absolute;
+    top: 46%;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+  }
+  .inside3{
+    position: absolute;
+    top: 49%;
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+  }
+}
+@media screen and (max-width: 1100px) {
+  .inside{
+    position: absolute;
+    top: 34%;
+    font-size: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+  }
+  .inside2{
+    position: absolute;
+    top: 38%;
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+  }
+  .inside3{
+    position: absolute;
+    top: 40%;
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+  }
+}
+@media screen and (max-width: 900px) {
+  .inside{
+    position: absolute;
+    top: 28%;
+    font-size: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+  }
+  .inside2{
+    position: absolute;
+    top: 32%;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+  }
+  .inside3{
+    position: absolute;
+    top: 34%;
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+  }
+}
+@media screen and (max-width: 770px) {
+  .inside{
+    position: absolute;
+    top: 23% !important;
+    font-size: 36px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+  }
+  .inside2{
+    position: absolute;
+    top: 26% !important;
+    font-size:18px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+  }
+  .inside3{
+    position: absolute;
+    top: 28% !important;
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+  }
+}
+@media screen and (max-width: 900px) {
+  .inside{
+    position: absolute;
+    top: 28%;
+    font-size: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+  }
+  .inside2{
+    position: absolute;
+    top: 32%;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+  }
+  .inside3{
+    position: absolute;
+    top: 34%;
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+  }
+}
 @media screen and (max-width: 991px) {
   .nav-link {
     color: #e8e9e9;
@@ -841,24 +978,43 @@ img {
   }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 450px) {
   #w-node-c0f84a9c-8ad0-8cfd-bd8c-8c60b5c0ac2e-b7a0dbc7 {
     order: 0;
     grid-row: span 1 / span 1;
   }
-  .vid{
+  /* .vid{
     display: block;
-    position: absolute; /* Necesario para usar z-index */
-    z-index: -1; /* Coloca el elemento detrás */
-    width: 100%; /* Ajusta el tamaño según sea necesario */
-    height: 100%; /* Ajusta el tamaño según sea necesario */
-    top: 0; /* Ajusta la posición según sea necesario */
-    left: 0; /* Ajusta la posición según sea necesario */
+    z-index: -1;
+    width: 100%;
+    height: 100%; 
+    top: 0;
+    left: 0;
     opacity: .1;
+    border-radius: 10px;
   }
-  .vid1{
+  .vid2{
     display: none;
+  } */
+  .inside{
+    position: absolute;
+    top: 16% !important;
+    font-size:26px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+  }
+  .inside2{
+    position: absolute;
+    top: 20% !important;
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+  }
+  .inside3{
+    position: absolute;
+    top: 22% !important;
+    font-size: 8px;
+    font-family:Arial, Helvetica, sans-serif;
+    
   }
 }
-
-
